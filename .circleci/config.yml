@@ -4,6 +4,7 @@ jobs:
     docker:
       - image: alpine:3.7
     steps:
+      - checkout
       - run:
           name: The First Step
           command: |
@@ -12,4 +13,5 @@ jobs:
       - run:
           name: The Second Step
           command: |
+            la -al
             echo 'this is second step'
