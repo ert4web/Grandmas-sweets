@@ -15,7 +15,7 @@ jobs:
           command: |
             ls -al
             echo 'this is second step'
-       - run:
+      - run:
            name: docker continer check
            command: |
             node -v
